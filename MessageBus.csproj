@@ -21,8 +21,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile></PackageReadmeFile>
     <Version>1.0.3</Version>
-    <PackageLicenseFile></PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Proprietary</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
