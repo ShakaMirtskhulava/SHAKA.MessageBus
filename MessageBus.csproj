@@ -17,24 +17,24 @@
     <RepositoryUrl>https://github.com/ShakaMirtskhulava/SHAKA.MessageBus</RepositoryUrl>
     <AssemblyVersion>1.1.1.3</AssemblyVersion>
     <FileVersion>1.1.1.3</FileVersion>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseFile>Licence.txt</PackageLicenseFile>
     <PackageTags>MessageBus, MessageQueue, Queue, Bus</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>MessageBusReadme.md</PackageReadmeFile>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <PackageLicenseFile>MessageBusLicence.md</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\Nuget Stuff\Licence.txt">
+    <None Include="..\MessageBusIcon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\Nuget Stuff\MessageBusIcon.png">
+    <None Include="..\MessageBusLicence.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\Nuget Stuff\MessageBusReadme.md">
+    <None Include="..\MessageBusReadme.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
@@ -43,6 +43,21 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.2" />
 	<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NugetStuff\MessageBusIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="NugetStuff\MessageBusLicence.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="NugetStuff\MessageBusReadme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
