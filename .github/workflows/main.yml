@@ -10,7 +10,7 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest # Switch from Windows to Linux
+    runs-on: ubuntu-latest # Using Linux runner
 
     steps:
     - name: Checkout code
@@ -19,11 +19,17 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0.x' # Adjusted to use .NET 8.0
+        dotnet-version: '8.0.x'
 
-    - name: Set version and build
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build project
+      run: dotnet build --configuration Release
+
+    - name: Pack project
       run: |
-        echo "Setting version to ${{ github.event.inputs.version }}"
+        echo "Packing version ${{ github.event.inputs.version }}"
         dotnet pack --configuration Release /p:Version=${{ github.event.inputs.version }}
 
     - name: Publish to NuGet
