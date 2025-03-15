@@ -14,16 +14,31 @@
 </Description>
     <Copyright>Copyright: © SHAKA 2025, All rights reserved. Unauthorized use, duplication, or distribution of this package without permission is prohibited.</Copyright>
     <PackageIcon>MessageBusIcon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/ShakaMirtskhulava/MessageBus</RepositoryUrl>
-    <AssemblyVersion>1.1.1.2</AssemblyVersion>
-    <FileVersion>1.1.1.2</FileVersion>
+    <RepositoryUrl>https://github.com/ShakaMirtskhulava/SHAKA.MessageBus</RepositoryUrl>
+    <AssemblyVersion>1.1.1.3</AssemblyVersion>
+    <FileVersion>1.1.1.3</FileVersion>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>Licence.txt</PackageLicenseFile>
     <PackageTags>MessageBus, MessageQueue, Queue, Bus</PackageTags>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>MessageBusReadme.md</PackageReadmeFile>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Nuget Stuff\Licence.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\Nuget Stuff\MessageBusIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\Nuget Stuff\MessageBusReadme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.2" />
