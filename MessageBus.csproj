@@ -22,7 +22,7 @@
     <PackageReadmeFile></PackageReadmeFile>
     <Version>1.0.3</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>Creative Commons Attribution Non Commercial 1.0 Generic</PackageLicenseExpression>
+    <PackageLicenseExpression>CC-BY-NC-1.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
