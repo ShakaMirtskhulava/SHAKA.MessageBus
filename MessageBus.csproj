@@ -18,7 +18,7 @@
     <PackageTags>MessageBus, MessageQueue, Queue, Bus</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>MessageBusReadme.md</PackageReadmeFile>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>MessageBusLicence.md</PackageLicenseFile>
   </PropertyGroup>
