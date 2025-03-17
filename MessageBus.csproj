@@ -13,13 +13,13 @@
 
 </Description>
     <Copyright>Copyright: © SHAKA 2025, All rights reserved. Unauthorized use, duplication, or distribution of this package without permission is prohibited.</Copyright>
-    <PackageIcon></PackageIcon>
+    <PackageIcon>MessageBusIcon.png</PackageIcon>
     <RepositoryUrl>https://github.com/ShakaMirtskhulava/SHAKA.MessageBus</RepositoryUrl>
     <AssemblyVersion>1.1.1.3</AssemblyVersion>
     <FileVersion>1.1.1.3</FileVersion>
     <PackageTags>MessageBus, MessageQueue, Queue, Bus</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReadmeFile></PackageReadmeFile>
+    <PackageReadmeFile>MessageBusReadme.md</PackageReadmeFile>
     <Version>1.0.3</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>MessageBusLicence.md</PackageLicenseFile>
@@ -31,7 +31,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="MessageBusIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="MessageBusLicence.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="MessageBusReadme.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
