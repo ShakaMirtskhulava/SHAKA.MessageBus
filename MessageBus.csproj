@@ -19,7 +19,7 @@
     <FileVersion>1.1.1.4</FileVersion>
     <PackageTags>MessageBus, MessageQueue, Queue, Bus</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReadmeFile>MessageBusReadme.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.0.4</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>MessageBusLicence.md</PackageLicenseFile>
@@ -52,6 +52,10 @@
       <PackagePath>\</PackagePath>
     </None>
     <None Update="NugetStuff\MessageBusReadme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
