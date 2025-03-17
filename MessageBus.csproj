@@ -22,7 +22,7 @@
     <PackageReadmeFile></PackageReadmeFile>
     <Version>1.0.3</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>CC-BY-NC-1.0</PackageLicenseExpression>
+    <PackageLicenseFile>MessageBusLicence.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="MessageBusLicence.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="NugetStuff\MessageBusIcon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
