@@ -15,12 +15,12 @@
     <Copyright>Copyright: © SHAKA 2025, All rights reserved. Unauthorized use, duplication, or distribution of this package without permission is prohibited.</Copyright>
     <PackageIcon>MessageBusIcon.png</PackageIcon>
     <RepositoryUrl>https://github.com/ShakaMirtskhulava/SHAKA.MessageBus</RepositoryUrl>
-    <AssemblyVersion>1.1.1.3</AssemblyVersion>
-    <FileVersion>1.1.1.3</FileVersion>
+    <AssemblyVersion>1.1.1.4</AssemblyVersion>
+    <FileVersion>1.1.1.4</FileVersion>
     <PackageTags>MessageBus, MessageQueue, Queue, Bus</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>MessageBusReadme.md</PackageReadmeFile>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>MessageBusLicence.md</PackageLicenseFile>
   </PropertyGroup>
