@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace MessageBus.Events;
 
-public record IntegrationEvent<EntityIdType> where EntityIdType : struct, IEquatable<EntityIdType>
+public record IntegrationEvent
 {
     public IntegrationEvent()
     {
@@ -11,7 +11,7 @@ public record IntegrationEvent<EntityIdType> where EntityIdType : struct, IEquat
         CreationDate = DateTime.UtcNow;
     }
 
-    public IntegrationEvent(EntityIdType entityId)
+    public IntegrationEvent(object entityId)
         : base()
     {
         EntityId = entityId;
@@ -24,6 +24,6 @@ public record IntegrationEvent<EntityIdType> where EntityIdType : struct, IEquat
     [JsonInclude]
     public string? CorrelationId { get; set; }
     [JsonInclude]
-    public EntityIdType EntityId { get; set; }
+    public object? EntityId { get; set; }
 }
 
