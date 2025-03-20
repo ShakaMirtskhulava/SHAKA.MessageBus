@@ -12,9 +12,10 @@ public record IntegrationEvent
     }
 
     public IntegrationEvent(object entityId)
-        : base()
     {
         EntityId = entityId;
+        Id = Guid.NewGuid();
+        CreationDate = DateTime.UtcNow;
     }
 
     [JsonInclude]
