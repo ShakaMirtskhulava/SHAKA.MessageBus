@@ -15,4 +15,8 @@ public record IntegrationEvent
 
     [JsonInclude]
     public DateTime CreationDate { get; set; }
+    [JsonInclude]
+    public string? CorrelationId { get; set; }
+    [JsonInclude]
+    public required string EntityId { get; set; }
 }
