@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
 
 namespace MessageBus.Events;
 
-public record IntegrationEvent
+public record IntegrationEvent<EntityIdType> where EntityIdType : struct, IEquatable<EntityIdType>
 {
     public IntegrationEvent()
     {
@@ -10,13 +11,19 @@ public record IntegrationEvent
         CreationDate = DateTime.UtcNow;
     }
 
+    public IntegrationEvent(EntityIdType entityId)
+        : base()
+    {
+        EntityId = entityId;
+    }
+
     [JsonInclude]
     public Guid Id { get; set; }
-
     [JsonInclude]
     public DateTime CreationDate { get; set; }
     [JsonInclude]
     public string? CorrelationId { get; set; }
     [JsonInclude]
-    public required string EntityId { get; set; }
+    public EntityIdType EntityId { get; set; }
 }
+
