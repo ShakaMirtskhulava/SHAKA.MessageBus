@@ -12,4 +12,4 @@ Another important property is `Dictionary<string, Type> EventTypes`, where the k
 
 To configure serialization options, we can use the **EventBusBuilderExtensions** class. If we don’t want to use the default serialization settings, we can override them here. Additionally, we can register subscriptions (events and their respective event handlers) using the `AddSubscription` method. This is where we leverage **Keyed Dependency Injection** to register the event handler class for a specific event type (key).
 
-Finally, we have the **IEventBusBuilder**, which is essentially a wrapper for `IServiceCollection`.
+Finally, we have the **IEventBusBuilder**, which is essentially a wrapper for `IServiceCollection`.  
