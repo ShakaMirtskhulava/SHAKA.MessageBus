@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace MessageBus.Events;
 
@@ -11,11 +10,12 @@ public record IntegrationEvent
         CreationDate = DateTime.UtcNow;
     }
 
-    public IntegrationEvent(object entityId)
+    public IntegrationEvent(object entityId, Dictionary<string,object>? additionalData = null)
     {
         EntityId = entityId;
         Id = Guid.NewGuid();
         CreationDate = DateTime.UtcNow;
+        AdditionalData = additionalData;
     }
 
     [JsonInclude]
@@ -26,5 +26,7 @@ public record IntegrationEvent
     public string? CorrelationId { get; set; }
     [JsonInclude]
     public object? EntityId { get; set; }
+    [JsonInclude]
+    public Dictionary<string, object>? AdditionalData { get; set; }
 }
 
